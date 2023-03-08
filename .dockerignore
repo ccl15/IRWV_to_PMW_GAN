@@ -1,0 +1,6 @@
+.ipynb*
+
+Pipfile*
+Dockerfile*
+docker-compose
+.dokerignore

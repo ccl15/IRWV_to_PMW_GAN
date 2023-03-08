@@ -1,0 +1,11 @@
+# aim 
+Input GridSat IR, WV to predict PMW
+
+# call
+loop.sh > main > modules
+
+# modify
+loop.sh -path_in
+        -path_out
+
+modules/data_processing -basin

@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  predict_GAN:
+    image: dltc/predict:latest
+    container_name: predict_GAN
+    #user: 3144:3144
+    volumes:
+      - /wk171/ccl/pred_GAN:/app
+      # himawari input path:
+      # /bk2/nick/TSWP/prod/dltc/files/temporary_files/himawari8_nc/202201W
+      - ${TC_input_path}:/TC
+      - ${NC_save_path}:/nc
+    command: pipenv run python main.py 
+
